@@ -4,6 +4,7 @@ import { EventoEvent } from "@/lib/types";
 type EventsPageProps = {
   params: {
     city: string;
+    className: string;
   };
 };
 
@@ -18,7 +19,7 @@ async function EventsPage({ params }: EventsPageProps) {
 
   return (
     <main className="flex flex-col items-center py-24 px-[20px] min-h-[110vh]">
-      <H1>
+      <H1 className="mb-28">
         {city === "all" && "All Events"}
         {city !== "all" &&
           `Events in ${city.charAt(0).toUpperCase() + city.slice(1)}`}

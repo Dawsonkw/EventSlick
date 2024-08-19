@@ -1,4 +1,4 @@
-import { twMerge } from "tailwind-merge";
+import { cn } from "@/lib/utils";
 
 type H1Props = {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ function H1({ children, className }: H1Props) {
   return (
     <div>
       <h1
-        className={twMerge(
+        className={cn(
           "text-3xl font-bold tracking-tight lg:text-6xl",
           className
         )}

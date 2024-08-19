@@ -4,6 +4,7 @@ import { EventoEvent } from "@/lib/types";
 type EventsPageProps = {
   params: {
     city: string;
+    className: string;
   };
 };
 

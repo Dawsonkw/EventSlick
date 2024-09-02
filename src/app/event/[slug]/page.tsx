@@ -42,14 +42,14 @@ async function EventPage({ params }: EventPageProps) {
                 day: "numeric",
               })}
             </p>
-            <H1 className="mb-2 mt-1 whitespace-nowrap lg:text-5xl">
+            <H1 className="mb-2 mt-1 whitespace-nowrap lg:text-5xl ">
               {event.name}
             </H1>
             <p className="whitespace-nowrap text-xl text-white/75">
               Organized by <span className="italic">{event.organizerName}</span>
             </p>
 
-            <button className="capitalize bg-white/20 text-lg mt-5 lg:mt-auto w-[95vw] sm:w-full py-2 rounded-md border-white/10 border-2 bg-blur hover:scale-105 active:scale-[1.02] transition focus:scale-105">
+            <button className="capitalize bg-white/20 text-lg mt-5 lg:mt-auto w-[95vw] sm:w-full py-2 rounded-md border-white/10 border-2 bg-blur state-effects">
               Get Tickets
             </button>
           </div>
